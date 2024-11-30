@@ -71,8 +71,8 @@ const Sidebar = () => {
           <Image
             src="https://project-management-s3-image.s3.us-east-1.amazonaws.com/logo.png"
             alt="Logo"
-            width={40}
-            height={40}
+            width={50}
+            height={50}
           />
           <div>
             <h3 className="text-md font-bold tracking-wide dark:text-gray-200">
