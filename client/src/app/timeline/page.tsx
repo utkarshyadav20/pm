@@ -6,14 +6,11 @@ import "gantt-task-react/dist/index.css";
 import { DisplayOption, Gantt, ViewMode } from "gantt-task-react"
 import Header from '@/components/Header/header';
 
-type TimeLineProps = {
-  id: string;
-  setIsModalNewTaskOpen: (isOpen: boolean) => void;
-}
+
 type TaskTypeItems = "task" | "milestone" | "project";
 
 
-const TimeLineView = ({ id, setIsModalNewTaskOpen }: TimeLineProps) => {
+const TimeLineView = () => {
   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
   const {
     data:
