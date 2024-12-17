@@ -4,7 +4,7 @@ import Header from '@/components/Header/header'
 import ModalNewTask from '@/components/ModalNewTask/modalNewTask'
 import TaskCard from '@/components/TaskCard/taskcard'
 import { dataGridClassNames, dataGridSxStyles } from '@/lib/utils'
-import { Priority, Task, useGetTasksByUserQuery } from '@/state/api'
+import { Priority, Task, useGetAuthUsersQuery, useGetTasksByUserQuery } from '@/state/api'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import React, { useState } from 'react'
 
@@ -71,8 +71,10 @@ const columns: GridColDef[] = [
 const ReusablePriorityPage = ({ priority }: Props) => {
     const [view, setView] = useState("list");
     const [isModalNewTaskOpen, setIsModalNewTaskOpen] = useState(false);
+    const { data: currUser } = useGetAuthUsersQuery({});
 
-    const userId = 1;
+    const userId = currUser?.userDetails?.userId ?? null;
+
     const { data: tasks,
         isLoading,
         isError: isTaskError
@@ -116,7 +118,7 @@ const ReusablePriorityPage = ({ priority }: Props) => {
                 </button>
                 <button
                     className={`px-4 py-2 ${view === "table" ? "bg-gray-300" : "bg-white"
-                        } rounded-l`}
+                        } rounded-r`}
                     onClick={() => setView("table")}
                 >
                     Table
