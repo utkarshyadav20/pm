@@ -47,7 +47,7 @@ const ModalNewTask = ({ isOpen, onClose, id = null }: ModalNewTaskPros) => {
     };
    
     const isFormValid = () => {
-        return title && authorUserId && !(id!==null || projectId);
+        return title && authorUserId;
     };
     const mapDisplayTextToStatus = (displayText: string): Status | undefined => {
       switch (displayText) {
