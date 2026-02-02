@@ -4,10 +4,13 @@ import path from "path";
 const prisma = new PrismaClient();
 
 async function deleteAllData(orderedFileNames: string[]) {
-  const modelNames = orderedFileNames.map((fileName) => {
-    const modelName = path.basename(fileName, path.extname(fileName));
-    return modelName.charAt(0).toUpperCase() + modelName.slice(1);
-  });
+  const modelNames = orderedFileNames
+    .slice()
+    .reverse()
+    .map((fileName) => {
+      const modelName = path.basename(fileName, path.extname(fileName));
+      return modelName.charAt(0).toUpperCase() + modelName.slice(1);
+    });
 
   for (const modelName of modelNames) {
     const model: any = prisma[modelName as keyof typeof prisma];
@@ -43,18 +46,10 @@ async function main() {
     const modelName = path.basename(fileName, path.extname(fileName));
     const model: any = prisma[modelName as keyof typeof prisma];
 
-    try {
-      for (const data of jsonData) {
-
-        await model.create({ data });
-
-      }
-      console.log(`Seeded ${modelName} with data from ${fileName}`);
-
-    } 
-    catch (error) {
-      console.error(`Error seeding data for ${modelName}:`, error);
+    for (const data of jsonData) {
+      await model.create({ data });
     }
+    console.log(`Seeded ${modelName} with data from ${fileName}`);
   }
 }
 

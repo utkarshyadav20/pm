@@ -16,7 +16,6 @@ datasource db {
 
 model User {
   userId            Int     @id @default(autoincrement())
-  cognitoId         String  @unique
   username          String  @unique
   profilePictureUrl String?
   teamId            Int?

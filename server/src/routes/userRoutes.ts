@@ -3,11 +3,11 @@ import { createTask, getTasks, updateTaskStatus } from "../controllers/taskContr
 import { getUser, getUsers, postUser } from "../controllers/userControllers";
 
 
-const router=Router();
+const router = Router();
 
-router.get("/",getUsers);
-router.post("/",postUser);
-router.get("/:cognitoId",getUser);
+router.get("/", getUsers);
+router.post("/", postUser);
+router.get("/:id", getUser);
 
 export default router;
 

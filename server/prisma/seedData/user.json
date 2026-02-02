@@ -2,121 +2,121 @@
   {
     "username": "AliceJones",
     "teamId": 1,
-    "profilePictureUrl": "p1.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174001"
+    "userId": 1,
+    "profilePictureUrl": "p1.jpeg"
   },
   {
     "username": "BobSmith",
     "teamId": 2,
-    "profilePictureUrl": "p2.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174002"
+    "userId": 2,
+    "profilePictureUrl": "p2.jpeg"
   },
   {
     "username": "CarolWhite",
     "teamId": 3,
-    "profilePictureUrl": "p3.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174003"
+    "userId": 3,
+    "profilePictureUrl": "p3.jpeg"
   },
   {
     "username": "DaveBrown",
     "teamId": 4,
-    "profilePictureUrl": "p4.jpeg",
-    "cognitoId": "213b7530-1031-70e0-67e9-fe0805e18fb3"
+    "userId": 4,
+    "profilePictureUrl": "p4.jpeg"
   },
   {
     "username": "EveClark",
     "teamId": 5,
-    "profilePictureUrl": "p5.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174005"
+    "userId": 5,
+    "profilePictureUrl": "p5.jpeg"
   },
   {
     "username": "FrankWright",
     "teamId": 1,
-    "profilePictureUrl": "p6.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174006"
+    "userId": 6,
+    "profilePictureUrl": "p6.jpeg"
   },
   {
     "username": "GraceHall",
     "teamId": 2,
-    "profilePictureUrl": "p7.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174007"
+    "userId": 7,
+    "profilePictureUrl": "p7.jpeg"
   },
   {
     "username": "HenryAllen",
     "teamId": 3,
-    "profilePictureUrl": "p8.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174008"
+    "userId": 8,
+    "profilePictureUrl": "p8.jpeg"
   },
   {
     "username": "IdaMartin",
     "teamId": 4,
-    "profilePictureUrl": "p9.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174009"
+    "userId": 9,
+    "profilePictureUrl": "p9.jpeg"
   },
   {
     "username": "JohnDoe",
     "teamId": 5,
-    "profilePictureUrl": "p10.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174010"
+    "userId": 10,
+    "profilePictureUrl": "p10.jpeg"
   },
   {
     "username": "LauraAdams",
     "teamId": 1,
-    "profilePictureUrl": "p11.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174011"
+    "userId": 11,
+    "profilePictureUrl": "p11.jpeg"
   },
   {
     "username": "NormanBates",
     "teamId": 2,
-    "profilePictureUrl": "p12.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174012"
+    "userId": 12,
+    "profilePictureUrl": "p12.jpeg"
   },
   {
     "username": "OliviaPace",
     "teamId": 3,
-    "profilePictureUrl": "p13.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174013"
+    "userId": 13,
+    "profilePictureUrl": "p13.jpeg"
   },
   {
     "username": "PeterQuill",
     "teamId": 4,
-    "profilePictureUrl": "p1.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174014"
+    "userId": 14,
+    "profilePictureUrl": "p1.jpeg"
   },
   {
     "username": "QuincyAdams",
     "teamId": 5,
-    "profilePictureUrl": "p2.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174015"
+    "userId": 15,
+    "profilePictureUrl": "p2.jpeg"
   },
   {
     "username": "RachelGreen",
     "teamId": 1,
-    "profilePictureUrl": "p3.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174016"
+    "userId": 16,
+    "profilePictureUrl": "p3.jpeg"
   },
   {
     "username": "SteveJobs",
     "teamId": 2,
-    "profilePictureUrl": "p4.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174017"
+    "userId": 17,
+    "profilePictureUrl": "p4.jpeg"
   },
   {
     "username": "TinaFey",
     "teamId": 3,
-    "profilePictureUrl": "p5.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174018"
+    "userId": 18,
+    "profilePictureUrl": "p5.jpeg"
   },
   {
     "username": "UrsulaMonroe",
     "teamId": 4,
-    "profilePictureUrl": "p6.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174019"
+    "userId": 19,
+    "profilePictureUrl": "p6.jpeg"
   },
   {
     "username": "VictorHugo",
     "teamId": 5,
-    "profilePictureUrl": "p7.jpeg",
-    "cognitoId": "123e4567-e89b-12d3-a456-426614174020"
+    "userId": 20,
+    "profilePictureUrl": "p7.jpeg"
   }
 ]

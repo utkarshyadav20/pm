@@ -5,6 +5,7 @@ import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { format } from 'date-fns'
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 type BoardProps = {
@@ -108,11 +109,14 @@ const TaskColumn = ({ status, tasks, moveTask, setIsModalNewTaskOpen }: TaskColu
                     </div>
                 </div>
             </div>
-            {tasks.filter((task) => task.status === status).map((task) => (
-                <Task
-                    key={task.id}
-                    task={task} />
-            ))}
+
+            <AnimatePresence>
+                {tasks.filter((task) => task.status === status).map((task) => (
+                    <Task
+                        key={task.id}
+                        task={task} />
+                ))}
+            </AnimatePresence>
         </div>
     )
 
@@ -161,9 +165,14 @@ const Task = ({ task }: TaskProps) => {
     );
 
     return (
-        <div
+        <motion.div
+            layout
+            initial={{ opacity: 0, y: 10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
             ref={(instance) => {
-                drag(instance)
+                drag(instance as unknown as Element)
             }}
             className={`mb-4 rounded-md bg-white shadow dark:bg-dark-secondary ${isDragging ? "opacity-50" : "opacity-100"
                 }`}
@@ -240,18 +249,18 @@ const Task = ({ task }: TaskProps) => {
 
                     </div>
 
-                <div className="flex items-center text-gray-500 dark:text-neutral-500">
-                    <MessageSquareMore size={20} />
-                    <span className="ml-1 text-sm dark:text-neutral-400">
-                        {numberOfComments}
-                    </span>
-                </div>
+                    <div className="flex items-center text-gray-500 dark:text-neutral-500">
+                        <MessageSquareMore size={20} />
+                        <span className="ml-1 text-sm dark:text-neutral-400">
+                            {numberOfComments}
+                        </span>
+                    </div>
                 </div>
 
             </div>
 
 
-        </div>
+        </motion.div>
     )
 
 
